@@ -9,4 +9,3 @@ def input_box() {
 //         [$class: 'TextParameterDefinition', defaultValue: 'uat1', description: 'Target', name: 'target']
 //     ])
 //     return userInput
-}
