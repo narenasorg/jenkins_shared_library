@@ -1,4 +1,4 @@
-def input_box() {
+def input_box {
     echo "Hola"
 }
 
@@ -9,3 +9,4 @@ def input_box() {
 //         [$class: 'TextParameterDefinition', defaultValue: 'uat1', description: 'Target', name: 'target']
 //     ])
 //     return userInput
+//}
