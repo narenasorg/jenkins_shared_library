@@ -1,4 +1,4 @@
-def input_box {
+def input_box(body) {
     echo "Hola"
 }
 
