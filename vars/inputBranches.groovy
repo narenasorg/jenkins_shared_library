@@ -1,4 +1,4 @@
-def inputBox(body) {
+def call∫() {
     echo "Hola"
 }
 
