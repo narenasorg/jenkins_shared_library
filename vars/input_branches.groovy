@@ -1,6 +1,5 @@
-def call() {
-    input(
-        id: 'userInput', message: 'Let\'s promote?', parameters: [
-        [$class: 'TextParameterDefinition', defaultValue: 'uat', description: 'Environment', name: 'env']
-        ])
-}
+def call() = input(
+    id: 'userInput', message: 'Let\'s promote?', parameters: [
+    [$class: 'TextParameterDefinition', defaultValue: 'uat', description: 'Environment', name: 'env'],
+    [$class: 'TextParameterDefinition', defaultValue: 'uat1', description: 'Target', name: 'target']
+    ])
