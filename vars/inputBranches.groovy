@@ -1,4 +1,4 @@
-def test () {
+def test() {
 
     sh "Estoy en un script"
 
