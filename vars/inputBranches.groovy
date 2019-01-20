@@ -1,5 +1,5 @@
 def call(Closure body) {
-    def userInput = input(
+    return steps.input(
         id: 'userInput', message: 'Escoja una rama', parameters: [
         [$class: 'ChoiceParameterDefinition',
             choices: ['one' , 'two' , 'three'],
@@ -7,5 +7,5 @@ def call(Closure body) {
             name: 'dropdown'
             ]
         ])
-        body()
+
 }
