@@ -1,4 +1,7 @@
 def call(Closure body) {
+    body.resolveStrategy = Closure.DELEGATE_FIRST
+    body.delegate = config
+    body()
     def userInput = input(
         id: 'userInput', message: 'Escoja una rama', parameters: [
         [$class: 'ChoiceParameterDefinition',
@@ -7,5 +10,5 @@ def call(Closure body) {
             name: 'dropdown'
             ]
         ])
-    body()
+
 }
