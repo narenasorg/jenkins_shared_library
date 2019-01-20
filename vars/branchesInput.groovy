@@ -1,4 +1,4 @@
-def ibranch() {
+def call() {
     data = [1,2,3,4]
     branch = input(
         id: 'userInput', message: 'Escoja una rama', parameters: [
