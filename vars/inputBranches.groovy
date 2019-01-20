@@ -1,8 +1,10 @@
 def call() {
-    def userInput = input(
-        id: 'userInput', message: 'Let\'s promote?', parameters: [
-        [$class: 'TextParameterDefinition', defaultValue: 'uat', description: 'Environment', name: 'env'],
-        [$class: 'TextParameterDefinition', defaultValue: 'uat1', description: 'Target', name: 'target']
-    ])
-    return userInput
+    input(
+        id: 'userInput', message: 'Escoja una rama', parameters: [
+        [$class: 'ChoiceParameterDefinition',
+            choices: ['one' , 'two' , 'three'],
+            description: 'dropdown',
+            name: 'dropdown'
+            ]
+        ])
 }
