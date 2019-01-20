@@ -7,5 +7,6 @@ def call(Closure body) {
             name: 'dropdown'
             ]
         ])
+    body()
 
 }
