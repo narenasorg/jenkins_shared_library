@@ -1,7 +1,7 @@
-def call(Closure body) {
+def test () {
 
     sh "Estoy en un script"
-    
+
     // input(
     //     id: 'userInput', message: 'Escoja una rama', parameters: [
     //     [$class: 'ChoiceParameterDefinition',
