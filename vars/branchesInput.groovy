@@ -1,4 +1,4 @@
-def selectBranch(Int [] options) {
+def selectBranch(Integer[] options) {
     branch = input(
         id: 'userInput', message: 'Escoja una rama', parameters: [
         [$class: 'ChoiceParameterDefinition',
