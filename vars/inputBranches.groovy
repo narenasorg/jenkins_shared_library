@@ -10,5 +10,6 @@ def call(Closure body) {
             name: 'dropdown'
             ]
         ])
+    sh "echo hola"
 
 }
