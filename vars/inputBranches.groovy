@@ -1,14 +1,11 @@
-def call() {
-    String message = params.message
-    String ok = params.get('ok', null)
+def call(Closure body) {
+    def userInput = input(
+        id: 'userInput', message: 'Escoja una rama', parameters: [
+        [$class: 'ChoiceParameterDefinition',
+            choices: ['one' , 'two' , 'three'],
+            description: 'dropdown',
+            name: 'dropdown'
+            ]
+        ])
 
-    timeout(time: 20, unit: 'SECONDS') {
-        /* invoke the built-in input step */
-        return steps.input(message: message,
-          ok: ok)
-    }
-}
-/* Convenience overload */
-def call(String message) {
-    return call(message: message)
 }
