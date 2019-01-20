@@ -1,5 +1,5 @@
 def call(Closure body) {
-    input(
+    body.input(
         id: 'userInput', message: 'Escoja una rama', parameters: [
         [$class: 'ChoiceParameterDefinition',
             choices: ['one' , 'two' , 'three'],
