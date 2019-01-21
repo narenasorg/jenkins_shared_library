@@ -9,11 +9,11 @@ def call() {
             valueExpression: "name",
             dataProvider: [
                 $class: "InlineJsonDataProvider",
-                autoCompleteData: {
-                    {"name": "Eddard Stark","id":"estark", "house":"Stark"},
-                    {"name": "John Snow","id":"jsnow", "house":"Stark"},
-                    {"name": "Tyrion Lannister","id":"tlannister", "house":"Lannister"}
-                    }
+                autoCompleteData: '[
+                        {"name": "Eddard Stark","id":"estark", "house":"Stark"},
+                        {"name": "John Snow","id":"jsnow", "house":"Stark"},
+                        {"name": "Tyrion Lannister","id":"tlannister", "house":"Lannister"}
+                    ]'
                 ]
             ]
         ])
